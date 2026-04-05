@@ -9,10 +9,6 @@ High-performance C/C++ Rubik's Cube solver core with:
 - desktop support
 - ESP32 support
 
-Repository name:
-
-- `zz-optimal-core`
-
 ## What Is This?
 
 `ZZOptimalCore` is a Rubik's Cube solver core written in C/C++.
@@ -111,6 +107,7 @@ The smallest integration path is:
 - [src/](src) core implementation, desktop entry point, ESP32 entry point
 - [examples/](examples) minimal usage examples
 - [docs/](docs) benchmark, ESP32, FMC, and performance notes
+- [TESZT_UNITS/](TESZT_UNITS) development test assets and solver-side validation helpers
 - [TUTORIAL.md](TUTORIAL.md) full integration tutorial
 
 ## Platform Support
