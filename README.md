@@ -1,6 +1,15 @@
-# ZZOptimalCore
+# zz-optimal-core
 
-High-performance C/C++ Rubik's Cube solver core with:
+zz-optimal-core is a high-performance C/C++ Rubik's Cube solver core with support for normal solving, FMC solving, reverse FMC search, pattern solving, desktop builds, and ESP32 deployment.
+
+## Quick links
+
+- [Tutorial](TUTORIAL.md)
+- [Direct solve example](examples/direct_solve_example.cpp)
+- [ESP32 FMC results](docs/esp32_fmc_results.md)
+- [Performance optimization summary](docs/performance_optimization_results.md)
+
+## Features
 
 - normal solve mode
 - FMC solve mode
@@ -11,17 +20,17 @@ High-performance C/C++ Rubik's Cube solver core with:
 
 ## What Is This?
 
-`ZZOptimalCore` is a Rubik's Cube solver core written in C/C++.
+zz-optimal-core is a Rubik's Cube solver core written in C/C++.
 
-It focuses on:
+It is designed to:
 
-- solving a cube from a full sticker state
-- generating short solutions with ZZ-based solving
-- deeper FMC-style search
-- reverse FMC search for better move quality
-- desktop and ESP32 compatibility
+- solve from a full `54`-sticker cube state
+- generate short solutions with ZZ-based solving
+- use deeper FMC-style search when needed
+- search both direct and inverse-state FMC routes
+- run on desktop and ESP32 targets
 
-In short: this project is the solver engine behind a larger Rubik's Cube automation goal.
+In short, this repository is the solver engine behind a larger Rubik's Cube automation goal.
 
 ## Why Am I Building It?
 
@@ -72,22 +81,6 @@ It benefits from a solution that is:
 
 This repository is meant to bridge that gap between raw cube state input and a real system that can physically solve the cube.
 
-If you want to use this project from another application, start here:
-
-- full integration tutorial: [TUTORIAL.md](TUTORIAL.md)
-- smallest direct API example: [examples/direct_solve_example.cpp](examples/direct_solve_example.cpp)
-
-## Features
-
-- solve from a full `54`-sticker cube state
-- solve from a generated, seeded, or fixed scramble
-- normal solve mode
-- FMC solve mode
-- reverse FMC search
-  - total search space: `384` routes
-- pattern solve presets
-- shared integration API for desktop and ESP32
-
 ## Quick Start
 
 If you want to embed the solver into another project, the main public API is:
@@ -107,7 +100,7 @@ The smallest integration path is:
 - [src/](src) core implementation, desktop entry point, ESP32 entry point
 - [examples/](examples) minimal usage examples
 - [docs/](docs) benchmark, ESP32, FMC, and performance notes
-- [TESZT_UNITS/](TESZT_UNITS) development test assets and solver-side validation helpers
+- [tests/](tests) development test assets and solver-side validation helpers
 - [TUTORIAL.md](TUTORIAL.md) full integration tutorial
 
 ## Platform Support
