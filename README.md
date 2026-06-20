@@ -9,21 +9,22 @@ zz-optimal-core is a high-performance C/C++ Rubik's Cube solver core with suppor
 - [ESP32 FMC results](docs/esp32_fmc_results.md)
 - [Performance optimization summary](docs/performance_optimization_results.md)
 
-## ZZ In Motion
+## ZZ Method
 
-<p align="center">
-  <img src="assets/eo-line.gif" alt="EO and line stage of ZZ" />
-</p>
+<table>
+  <tr>
+    <td align="center"><img src="assets/eo-line.gif" alt="EO and line" width="100%" /></td>
+    <td align="center"><img src="assets/f2l.gif" alt="F2L" width="100%" /></td>
+    <td align="center"><img src="assets/last-layer.gif" alt="Last layer" width="100%" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>EO + line</b><br />Orient the edges and build the line.</td>
+    <td align="center"><b>F2L</b><br />Solve the first two layers.</td>
+    <td align="center"><b>Last layer</b><br />Finish the cube with the final step.</td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="assets/f2l.gif" alt="F2L stage of ZZ" />
-</p>
-
-<p align="center">
-  <img src="assets/last-layer.gif" alt="Last layer stage of ZZ" />
-</p>
-
-ZZ starts by orienting all edges, builds a line, solves the first two layers, and then finishes the cube with a last-layer step.
+The ZZ method first orients the edges, then builds a line, then solves the first two layers, and finally finishes the cube with a last-layer step.
 
 That is the core idea behind the solver in this repository.
 
