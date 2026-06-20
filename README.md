@@ -13,9 +13,9 @@ zz-optimal-core is a high-performance C/C++ Rubik's Cube solver core with suppor
 
 <table>
   <tr>
-    <td align="center"><img src="assets/eo-line.gif" alt="EO and line" width="100%" /></td>
-    <td align="center"><img src="assets/f2l.gif" alt="F2L" width="100%" /></td>
-    <td align="center"><img src="assets/last-layer.gif" alt="Last layer" width="100%" /></td>
+    <td align="center" width="33%"><img src="assets/eo-line.gif" alt="EO and line" width="100%" /></td>
+    <td align="center" width="33%"><img src="assets/f2l.gif" alt="F2L" width="100%" /></td>
+    <td align="center" width="33%"><img src="assets/last-layer.gif" alt="Last layer" width="100%" /></td>
   </tr>
   <tr>
     <td align="center"><b>EO + line</b><br />Orient the edges and build the line.</td>
