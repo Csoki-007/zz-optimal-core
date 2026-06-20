@@ -2,24 +2,20 @@
 
 zz-optimal-core is a high-performance C/C++ Rubik's Cube solver core with support for normal solving, FMC solving, reverse FMC search, pattern solving, desktop builds, and ESP32 deployment.
 
-<p align="center">
-  <img src="assets/readme-hero.svg" alt="zz-optimal-core hero banner" />
-</p>
-
-<p align="center">
-  <img src="assets/readme-flow.svg" alt="zz-optimal-core solve pipeline" />
-</p>
-
-<p align="center">
-  <img src="assets/readme-performance.svg" alt="zz-optimal-core performance snapshot" />
-</p>
-
 ## Quick links
 
 - [Tutorial](TUTORIAL.md)
 - [Direct solve example](examples/direct_solve_example.cpp)
 - [ESP32 FMC results](docs/esp32_fmc_results.md)
 - [Performance optimization summary](docs/performance_optimization_results.md)
+
+## ZZ Method
+
+![ZZ method overview](assets/zz-method.svg)
+
+ZZ starts by orienting all edges, then builds a line, then solves the first two layers, and finishes the cube with a last-layer step.
+
+That is the core idea behind the solver in this repository.
 
 ## Features
 
