@@ -2,6 +2,18 @@
 
 zz-optimal-core is a high-performance C/C++ Rubik's Cube solver core with support for normal solving, FMC solving, reverse FMC search, pattern solving, desktop builds, and ESP32 deployment.
 
+<p align="center">
+  <img src="assets/readme-hero.svg" alt="zz-optimal-core hero banner" />
+</p>
+
+<p align="center">
+  <img src="assets/readme-flow.svg" alt="zz-optimal-core solve pipeline" />
+</p>
+
+<p align="center">
+  <img src="assets/readme-performance.svg" alt="zz-optimal-core performance snapshot" />
+</p>
+
 ## Quick links
 
 - [Tutorial](TUTORIAL.md)

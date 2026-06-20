@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">zz-optimal-core solve pipeline</title>
+  <desc id="desc">A simple pipeline diagram from cube state to solution using the solver core.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10192b"/>
+      <stop offset="100%" stop-color="#172840"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff8a00"/>
+      <stop offset="50%" stop-color="#42d392"/>
+      <stop offset="100%" stop-color="#4da3ff"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" rx="28" fill="url(#bg2)"/>
+  <text x="48" y="56" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Solve pipeline</text>
+  <text x="48" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#b7c6e3">One shared API, multiple solve modes, same output shape.</text>
+
+  <g filter="url(#cardShadow)">
+    <rect x="48" y="122" width="190" height="120" rx="20" fill="#0c1423" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="143" y="158" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Cube state</text>
+    <text x="143" y="188" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#9cb0d3">54 stickers</text>
+  </g>
+
+  <path d="M250 182 L 340 182" stroke="url(#line)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M332 172 L 350 182 L 332 192" fill="none" stroke="#42d392" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#cardShadow)">
+    <rect x="360" y="122" width="260" height="120" rx="20" fill="#0c1423" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="490" y="154" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Shared solver core</text>
+    <text x="490" y="184" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#9cb0d3">Normal / FMC / Pattern</text>
+    <text x="490" y="206" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#9cb0d3">Desktop / ESP32</text>
+  </g>
+
+  <path d="M632 182 L 722 182" stroke="url(#line)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M714 172 L 732 182 L 714 192" fill="none" stroke="#4da3ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#cardShadow)">
+    <rect x="742" y="122" width="190" height="120" rx="20" fill="#0c1423" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="837" y="158" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Solution</text>
+    <text x="837" y="188" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#9cb0d3">Move sequence</text>
+  </g>
+
+  <path d="M946 182 L 1036 182" stroke="url(#line)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1028 172 L 1046 182 L 1028 192" fill="none" stroke="#ff8a00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#cardShadow)">
+    <rect x="1056" y="122" width="96" height="120" rx="20" fill="#0c1423" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="1104" y="158" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Out</text>
+    <text x="1104" y="188" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#9cb0d3">printf</text>
+  </g>
+</svg>
